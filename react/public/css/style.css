@@ -1,0 +1,263 @@
+/* reset */
+
+* {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #fff;
+}
+
+li {
+    padding: 20px;
+    text-transform: uppercase;
+    font-weight: 700; 
+}
+
+a {
+    color: rgb(41, 40, 44) !important;
+    text-decoration: none !important;
+}
+
+/* header */
+
+.header {
+    background: linear-gradient(#6295f4, #254e98);
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img {
+    max-width: 100%;
+    transition: transform 0.3s ease-out;
+}
+
+.header img:hover {
+    transform: scale(1.1);
+}
+
+.header li {
+    padding: 0 15px;
+    transition: transform 0.3s ease-out;
+}
+
+.header li:hover {
+    transform: scale(1.1);
+}
+
+/* main */
+/* section main */
+
+main {
+    background: linear-gradient(#254e98, #6295f4);
+}
+
+.sectionMain {
+    position: relative;
+    background: url('../media/heroImg.png') center center no-repeat;
+    background-size: cover;
+    padding: 100px 0; /* Adjusted for smaller screens */
+}
+
+.overlay {
+    background: rgba(146, 147, 221, 0.5);
+    padding: 20px;
+}
+
+.overlay h2,
+.overlay p {
+    margin: 0;
+    padding: 10px;
+    padding-bottom: 200px;
+}
+
+.overlay p {
+    font-size: large;
+}
+
+/* section chef */
+
+.sectionChef {
+    padding-top: 50px;
+    color: rgb(236, 202, 186);
+    font-style: italic;
+}
+
+.sectionChef img {
+    max-width: 100%;
+    border: 3px solid black;
+}
+
+.chefArea {
+    padding: 10px;
+}
+
+/* carousel */
+
+/* .sectionCarousel img {
+    width: 50%;
+} */
+
+/* review */
+
+.sectionReview {
+    padding: 20px;
+    background-color: rgb(228, 238, 255);
+}
+
+.sectionReview .reviewCard {
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.sectionReview img {
+    max-width: 100%;
+    border: 2px solid rgb(214, 214, 214);
+}
+
+/* menu */
+
+.menuCard {
+    padding: 20px;
+}
+
+.menuCard h4 {
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+}
+
+/* single item */
+
+.menuCardSingle {
+    padding: 20px;
+}
+
+.menuCardSingle .card {
+    padding: 10px;
+    background-color: #c8d6f1;
+    border: solid 2px #2e384a;
+}
+
+.menuCardSingle .card-body {
+    padding-top: 3rem;
+}
+
+.menuCardSingle h4 {
+    font-size: 30px;
+}
+
+.menuCardSingle p {
+    font-size: 20px;
+}
+
+.cartBtn {
+    margin: 10px;
+    border: none !important;
+    background-color: #6295f4 !important;
+    transition: 0.3s ease-out;
+}
+
+.cartBtn:hover {
+    background-color: #254e98 !important;
+    color: black !important;
+    transform: scale(1.05);
+}
+
+/* about */
+
+.sectionAbout {
+    padding: 20px;
+}
+
+.sectionAbout .container {
+    background-color: rgba(215, 212, 243, 0.073);
+    padding: 20px;
+    border: rgb(64, 58, 104) solid 2px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sectionAbout img {
+    max-width: 100%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sectionAbout p {
+    padding: 10px;
+    color: rgb(236, 202, 186);
+}
+
+/* login */
+
+#formMain p {
+    color: rgb(236, 202, 186);
+}
+
+.formSection {
+    padding: 20px 0;
+}
+
+#formMain h2, #formMain label {
+    color: rgb(238, 219, 193);
+}
+
+.textBoxMain {
+    padding-top: 10px;
+    font-size: 16px;
+}
+
+.textBoxFine {
+    border-bottom: rgb(236, 202, 186) 3px dotted;
+    padding-bottom: 20px;
+}
+
+/* footer */
+
+.footer {
+    background: linear-gradient(#6295f4, #254e98);
+    padding: 10px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer li {
+    transition: transform 0.3s ease-out;
+}
+
+.footer li:hover {
+    transform: scale(1.1);
+}
+
+/* Media Queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header li {
+        padding: 10px 20px;
+    }
+
+    .overlay {
+        padding-top: 150px;
+        padding-bottom: 300px;
+    }
+
+    .menuCardSingle h4 {
+        font-size: 24px;
+    }
+
+    .menuCardSingle p {
+        font-size: 16px;
+    }
+}
